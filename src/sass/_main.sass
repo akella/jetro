@@ -1,0 +1,172 @@
+.logo
+	font-size: 0
+	color: #e8603c 
+	text-decoration: none
+	+bebas
+	&__part1,&__part2
+		display: inline-block
+		font-size: 36px 
+	&__part2
+		color: #f3af9d 
+
+.nav
+	font-size: 16px 
+	+bebas
+	a
+		text-decoration: none
+		color: #b9b9b9 
+		margin-left: 24px 
+		&.is-active,&:hover
+			color: #e8663c 
+
+.slider
+	position: relative
+	margin-bottom: 14px  
+	&__next,&__prev
+		position: absolute
+		top: 50%
+		left: 20px  
+		cursor: pointer
+		z-index: 100 
+		font-size: 54px 
+		margin-top: -27px 
+	&__next
+		left: auto
+		right: 20px  
+		transform: rotate(-180deg)
+.slide
+	position: relative
+	height: 0
+	padding-bottom: 42% 
+
+	.slide__content
+		position: absolute
+		background: rgba(#e8663c,.8)
+		left: 37px  
+		bottom: 31px 
+		max-width: 416px 
+		padding: 17px 
+		+r(620)
+			background: none 
+			top: 10px
+			bottom: auto
+	&__title
+		font-size: 18px 
+		color: #fff 
+		text-decoration: none
+		text-transform: uppercase
+		+bebas
+		margin-bottom: 16px 
+	p
+		font-size: 12px 
+		line-height: 1.4
+		color: #fff  
+
+.hero
+	overflow: hidden
+	margin-bottom: 36px 
+	&__wrap
+		position: relative
+		&:before,&:after
+			position: absolute
+			height: 60px 
+			background: #f2ae9c
+			content: "" 
+			width: 1000px 
+			top: 0 
+		&:before
+			right: 100%
+			margin-right: 10px  
+		&:after
+			left: 100%
+			margin-left: 10px  
+.thumbs
+	ul
+		display: grid
+		grid-template-columns: repeat(6,1fr)
+		grid-gap: 17px
+		+r(620)
+			grid-template-columns: repeat(3,1fr)
+	li
+	a
+		display: block
+		height: 0 
+		text-decoration: none
+		padding-bottom: 60%
+		background-size: cover
+		background-position: 50% 50%  
+
+
+.features
+	display: grid
+	grid-template-columns: repeat(3,1fr)
+	grid-gap: 17px
+	margin-bottom: 44px 
+	+r(840)
+		display: block
+.feature
+	+r(840)
+		margin-bottom: 40px 
+	&__title
+		display: flex
+		margin-bottom: 31px 
+		+r(840)
+			display: block
+			margin-bottom: 10px 
+	&__icon
+		flex: 0
+		margin-right: 18px 
+		+r(840)
+			margin-bottom: 10px 
+		.icon
+			font-size: 46px 
+			fill: #e8663c
+	h2
+		+bebas
+		text-transform: uppercase
+		font-size: 18px 
+		flex: 1
+		color: #e8663c 
+		line-height: 1.33
+	&__text
+		font-size: 12px 
+		color: #414141 
+		line-height: 1.5
+		padding-right: 20px 
+		margin-bottom: 17px 
+.works
+	display: grid
+	grid-template-columns: repeat(4,1fr)
+	grid-gap: 17px
+	margin-bottom: 48px 
+	+r(700)
+		grid-template-columns: repeat(2,1fr)
+.work
+	display: block
+	text-decoration: none
+	&__image
+		img
+			display: block
+			max-width: 100% 
+			// width: 100% 
+	&__bottom
+		border: 1px solid #DBDBDB 
+		border-top:  none 
+		padding: 10px 13px 
+	&__title
+		font-size: 16px 
+		text-transform: uppercase
+		+bebas
+		font-weight: normal 
+		color: #b9b9b9
+		margin-bottom: 5px  
+	&__date
+		font-size: 11px 
+		color: #e8663c 
+		text-transform: uppercase
+		+bebas
+
+
+
+
+		

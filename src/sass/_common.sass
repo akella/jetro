@@ -1,0 +1,38 @@
++font('bebas-font',bebas)
+
+body
+	font-family: Helvetica,sans-serif 
+
+=bebas
+	font-family: bebas,sans-serif 
+
+.container
+	max-width: 940px 
+	margin: 0 auto
+	+r(960)
+		margin: 0 10px 
+.button
+	font-size: 12px 
+	text-transform: uppercase
+	height: 31px 
+	padding:  0 13px
+	display: inline-block
+	color: #fff
+	text-decoration: none 
+	background: #e8663c
+	line-height: 31px  
+	+bebas
+
+.h3
+	display: flex
+	font-size: 18px 
+	color: #e8603c 
+	text-transform: uppercase
+	text-decoration: none
+	margin-bottom: 23px 
+	&:after
+		content: "" 
+		background: red
+		flex: 1
+		margin-left: 20px  
+		background: url(../img/pattern.png) 0 0 

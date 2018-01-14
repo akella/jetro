@@ -1,0 +1,74 @@
+.header
+	&__wrap
+		display: flex
+		text-align: left
+		padding: 22px 0 
+		align-items: baseline
+		+r(620)
+			display: block
+			text-align: center
+	&__logo
+		+r(620)
+			margin-bottom: 20px 
+	&__nav
+		margin-left: auto 
+		position: relative
+		top: -6px 
+		+r(620)
+			top: 0
+			text-align: center
+			line-height: 2 
+
+.footer
+	overflow: hidden
+	font-size: 12px 
+	line-height: 1.4
+	&__text
+		p
+			margin-bottom: 1em 
+	h2
+		margin-bottom: 23px 
+		font-size: 20px 
+		text-transform: uppercase
+		font-weight: normal
+		+bebas
+		color: #fff 
+		+r(600)
+			margin-bottom: 5px 
+	&__wrap
+		position: relative
+		padding: 30px 
+		background: #e8663c
+		color: #fff  
+		display: grid
+		grid-template-columns: repeat(3,1fr)
+		grid-gap: 17px
+		+r(600)
+			display: block
+		&:before,&:after
+			position: absolute
+			height: 100% 
+			background: #f2ae9c
+			content: "" 
+			width: 1000px 
+			top: 0 
+		&:before
+			right: 100%
+			margin-right: 10px  
+		&:after
+			left: 100%
+			margin-left: 10px  
+	&__col
+		+r(600)
+			margin-bottom: 40px 
+	&__whitelinks
+		a
+			color: #fff
+			text-decoration: none
+.tweet
+	margin-bottom: 1.2em 
+	&__content
+		margin-bottom: .3em 
+	a
+		color: #f4b29d 
+		text-decoration: none
